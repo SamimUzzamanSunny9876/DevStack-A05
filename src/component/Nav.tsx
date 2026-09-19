@@ -3,7 +3,7 @@ import logo from '../assets/logo-text.png'
 
 const Nav = () => {
     return (
-        <nav className="flex items-center justify-between w-full h-20 px-4 md:px-8 bg-white border-b border-gray-100 container mx-auto">
+        <nav className="sticky top-0 z-50 flex items-center justify-between h-20 bg-white border-b border-gray-100 container mx-auto">
           
           <img src={logo} alt="DevStack Logo" className="h-8 md:h-10 w-auto" />
           

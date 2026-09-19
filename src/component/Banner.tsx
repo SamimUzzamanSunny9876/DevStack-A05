@@ -3,31 +3,31 @@ import banner from '../assets/banner-stack.png'
 
 const Banner = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-between items-center max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24 gap-12">
+    <div className="flex flex-col-reverse md:flex-row justify-between items-center max-w-7xl conyainer mx-auto  ">
       
-      {/* Left Text Content */}
+     
       <div className="flex flex-col gap-6 md:w-1/2">
         
-        {/* Headlines */}
+  
         <div className="flex flex-col gap-1">
           <h1 className="text-5xl md:text-[64px] font-extrabold text-[#111827] tracking-tight leading-tight">
             Build Your Ideal
           </h1>
           <h1 className="text-5xl md:text-[64px] font-extrabold tracking-tight leading-tight">
-            {/* Applied continuous gradient across both words */}
+        
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#f86d36] via-[#e8367f] to-[#8431e7]">
               Development Stack
             </span>
           </h1>
         </div>
 
-        {/* Paragraph */}
+       
         <p className="text-lg text-slate-500 leading-relaxed max-w-[34rem]">
           Explore frontend, backend, database, and tooling options, compare them
           side by side, and put together the stack that fits your next project.
         </p>
 
-        {/* Buttons */}
+        
         <div className="flex flex-wrap items-center gap-4 mt-2">
           <button className="px-6 py-3 text-[15px] font-medium text-white bg-gradient-to-r from-[#f86d36] to-[#e8367f] rounded-lg shadow-sm hover:opacity-90 transition-opacity">
             Explore Technologies
@@ -39,7 +39,7 @@ const Banner = () => {
         
       </div>
 
-      {/* Right Image Content */}
+  
       <div className="w-full md:w-1/2 flex justify-center md:justify-end">
         <img 
           src={banner} 
