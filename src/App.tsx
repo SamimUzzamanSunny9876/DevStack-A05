@@ -3,8 +3,9 @@ import Banner from "./component/Banner"
 import Cards from "./component/Cards/Cards"
 import Heading from "./component/Heading"
 import Nav from "./component/Nav"
+import type { Icard } from "./types/cardType"
 
-const cardsFetch = async()=> {
+const cardsFetch = async() : Promise<Icard[]>=> {
     const res = await fetch("/data.json")
     const data = await res.json()
     return data;

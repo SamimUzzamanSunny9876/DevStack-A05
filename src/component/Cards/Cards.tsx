@@ -1,14 +1,20 @@
 import React, { use } from 'react';
+import type { Icard } from '../../types/cardType';
+import Card from './Card';
 
-const Cards = ({cardsPromise}) => {
+interface CardProps {
+    cardsPromise: Promise<Icard[]>
+}
+
+const Cards = ({cardsPromise}: CardProps)  => {
 
      const cards = use(cardsPromise)
-     console.log(cards);
+    
     return (
         <div>
-             
+            <Card cards ={cards}/>
         </div>
     );
-};
+}; 
 
 export default Cards;
